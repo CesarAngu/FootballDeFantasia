@@ -4,34 +4,39 @@ import './ComoSeJuega.css';
 function ComoSeJuega() {
   return (
     <div className="como-container">
-      <header className="como-header">
-        <h1>¿Cómo se Juega?</h1>
-        <nav className="como-nav">
-          <Link to="/perfil" className="nav-btn">Perfil</Link>
-          <Link to="/jugadores" className="nav-btn">Jugadores</Link>
-          <Link to="/miequipo" className="nav-btn">Mi Equipo</Link>
-        </nav>
-      </header>
+      <nav className="como-nav">
+        <Link to="/perfil" className="nav-btn">Perfil</Link>
+        <Link to="/jugadores" className="nav-btn">Jugadores</Link>
+        <Link to="/miequipo" className="nav-btn">Mi Equipo</Link>
+      </nav>
 
-      <section className="como-section">
-        <h2>Formación del equipo</h2>
-        <p>Escoge tus jugadores favoritos para formar un equipo competitivo. Elige titulares y suplentes estratégicamente.</p>
-      </section>
+      <h1 className="como-title">¿Cómo se juega?</h1>
 
-      <section className="como-section">
-        <h2>Sistema de puntuación</h2>
-        <p>Los jugadores obtienen puntos según su rendimiento en partidos reales: goles, asistencias, porterías a cero, etc.</p>
-      </section>
+      <div className="card-grid">
+        <div className="card">
+          <img src="/alineacion.png" alt="Formación" />
+          <h2>Formación del equipo</h2>
+          <p>Elige una plantilla de 15 jugadores con un presupuesto limitado.</p>
+        </div>
 
-      <section className="como-section">
-        <h2>Ligas</h2>
-        <p>Compite en la Liga Premier. Participa contra tus amigos o en ligas públicas para demostrar tus habilidades.</p>
-      </section>
+        <div className="card">
+          <img src="/sistemapuntuacion.png" alt="Puntos" />
+          <h2>Sistema de puntuación</h2>
+          <p>Los jugadores ganan puntos en base a su rendimiento en partidos reales.</p>
+        </div>
 
-      <section className="como-section">
-        <h2>Transferencias y comodines</h2>
-        <p>Realiza cambios semanales y usa comodines para renovar tu equipo sin penalización de puntos.</p>
-      </section>
+        <div className="card">
+          <img src="/liga.png" alt="Ligas" />
+          <h2>Ligas</h2>
+          <p>Compite contra amigos u otros en la liga premier.</p>
+        </div>
+
+        <div className="card">
+          <img src="/transferencia.png" alt="Transferencias" />
+          <h2>Transferencias y comodines</h2>
+          <p>Cambia jugadores en tu plantilla cada semana para obtener la mayor cantidad de puntos.</p>
+        </div>
+      </div>
     </div>
   );
 }

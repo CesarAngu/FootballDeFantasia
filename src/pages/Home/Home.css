@@ -1,13 +1,33 @@
-.home-container {
-  background-color: #0f0532;
+.home-layout {
+  display: flex;
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-left {
+  flex: 1;
+  background-color: #0f0532;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  padding: 2rem;
+}
+
+.home-right {
+  flex: 1;
+  background-color: #0f0532;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.football-img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
 }
 
 .title {

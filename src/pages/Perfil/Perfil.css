@@ -89,3 +89,24 @@
 .logout-button:hover {
   background-color: #c0392b;
 }
+
+.perfil-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.perfil-avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.perfil-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #38784f;
+}

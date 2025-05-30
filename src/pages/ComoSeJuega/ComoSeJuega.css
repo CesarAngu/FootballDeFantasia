@@ -6,16 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.como-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.como-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
+/* Navegación */
 .como-nav {
   display: flex;
   justify-content: center;
@@ -27,8 +18,8 @@
   background-color: #38784f;
   color: white;
   text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
@@ -37,16 +28,55 @@
   background-color: #2e623f;
 }
 
-.como-section {
-  margin-bottom: 1.5rem;
+/* Título principal */
+.como-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
-.como-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+/* Cuadrícula de tarjetas */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas fijas */
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.como-section p {
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* 1 por fila en móviles */
+  }
+}
+
+/* Tarjetas individuales */
+.card {
+  background-color: #12093c;
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* Ocultar secciones antiguas */
+.como-section {
+  display: none;
 }
