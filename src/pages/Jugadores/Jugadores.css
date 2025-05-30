@@ -1,0 +1,137 @@
+.jugadores-container {
+  background-color: #0f0532;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jugadores-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón Volver atrás */
+.back-button {
+  display: inline-block;
+  background-color: #38784f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2e623f;
+}
+
+/* Botones de pestañas */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: #1e154d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #2a1f5c;
+}
+
+.tab-btn.active {
+  background-color: #38784f;
+}
+
+/* Botones compra/venta dentro de mis opciones */
+.compra-venta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn.morado {
+  background-color: #6a4d8f;
+}
+
+.tab-btn.morado:hover {
+  background-color: #5a3d7a;
+}
+
+.tab-btn.active.morado {
+  background-color: #9b72b5;
+}
+
+/* Contenido dinámico */
+.jugadores-section {
+  background-color: #1e154d;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.jugador-card {
+  display: flex;
+  background-color: #2a1f5c;
+  padding: 0.7rem;
+  border-radius: 8px;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.jugador-imagen {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.jugador-info {
+  flex: 1;
+}
+
+.jugador-nombre {
+  color: red;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.jugador-valor {
+  color: #00ff88;
+  margin: 0.3rem 0;
+}
+
+.jugador-tiempo {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.fichar-btn {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fichar-btn:hover {
+  background-color: #007acc;
+}

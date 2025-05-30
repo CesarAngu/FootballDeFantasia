@@ -1,0 +1,91 @@
+.perfil-container, .m_equipo-container {
+  background-color: #0f0532;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #38784f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2e623f;
+}
+
+.perfil-title, .m_equipo-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Perfil específico */
+.perfil-info p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* MiEquipo específico */
+.m_equipo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.m_equipo-card {
+  display: flex;
+  background-color: #1e154d;
+  padding: 1rem;
+  border-radius: 8px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.m_equipo-imagen {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.m_equipo-info {
+  flex: 1;
+}
+
+.m_equipo-nombre {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.m_equipo-posicion {
+  margin: 0.3rem 0 0;
+  color: #00ff88;
+}
+
+.logout-button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
